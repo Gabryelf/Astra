@@ -2,14 +2,14 @@ const gamesData = [
     // ЭКШЕН ИГРЫ
     {
         id: 'space-shooter',
-        title: 'Space Shooter',
+        title: 'Cosmo Dash',
         category: 'action',
         description: 'Захватывающий космический шутер с волнами врагов и боссами',
         fullDescription: 'Защищайте галактику от вторжения инопланетян! Управляйте космическим кораблём, уничтожайте вражеские волны, собирайте улучшения и сражайтесь с эпическими боссами. Игра с прогрессивной сложностью и системой апгрейдов.',
         image: 'docs/screenshots/space-shooter.jpg',
         path: 'games/action/space-shooter/index.html',
-        author: 'Cosmo Studio',
-        authorBio: 'Студия разработки космических игр с 2018 года',
+        author: 'GameDeva',
+        authorBio: 'Студия разработки космических игр с 2020 года',
         rating: 4.8,
         playtime: '5-10 мин',
         likes: '1.2K',
@@ -24,7 +24,7 @@ const gamesData = [
             { key: 'R', action: 'Перезарядка' }
         ],
         tags: ['HTML5', 'Canvas', 'Shooter', 'Космос', 'Экшен'],
-        source: 'https://github.com/example/space-shooter',
+        source: 'https://github.com/Gabryelf/Astra/blob/v0.0.1/games/actions/space_shooter_1/index.html',
         demo: '#'
     },
     
