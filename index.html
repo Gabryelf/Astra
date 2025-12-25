@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Games Collection | Игровая коллекция</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GameHub</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#featured" class="nav-link active">Главная</a>
+                <a href="#categories" class="nav-link">Категории</a>
+                <a href="#all-games" class="nav-link">Все игры</a>
+                <a href="#about" class="nav-link">О проекте</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">HTML5 Игры</span>
+                <br>Бесплатно и без регистрации
+            </h1>
+            <p class="hero-subtitle">Коллекция лучших мини-игр, созданных на чистом HTML, CSS и JavaScript</p>
+            <div class="hero-buttons">
+                <a href="#all-games" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Играть сейчас
+                </a>
+                <a href="#categories" class="btn btn-secondary">
+                    <i class="fas fa-th-large"></i> Смотреть категории
+                </a>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="floating-game-icons">
+                <i class="fas fa-space-shuttle"></i>
+                <i class="fas fa-chess"></i>
+                <i class="fas fa-puzzle-piece"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Категории -->
+    <section id="categories" class="section">
+        <div class="container">
+            <h2 class="section-title">Категории игр</h2>
+            <div class="categories-grid">
+                <a href="#action" class="category-card" data-category="action">
+                    <div class="category-icon">
+                        <i class="fas fa-fighter-jet"></i>
+                    </div>
+                    <h3>Экшен</h3>
+                    <p>Стрелялки, аркады, драки</p>
+                    <span class="game-count">12 игр</span>
+                </a>
+                
+                <a href="#arcade" class="category-card" data-category="arcade">
+                    <div class="category-icon">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <h3>Аркады</h3>
+                    <p>Классика и ретро-игры</p>
+                    <span class="game-count">8 игр</span>
+                </a>
+                
+                <!-- Добавьте другие категории -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Все игры -->
+    <section id="all-games" class="section">
+        <div class="container">
+            <h2 class="section-title">Все игры</h2>
+            <div class="games-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="action">Экшен</button>
+                <button class="filter-btn" data-filter="arcade">Аркада</button>
+                <!-- Другие фильтры -->
+            </div>
+            <div id="games-container" class="games-grid">
+                <!-- Игры будут загружены через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameHub</h3>
+                    <p>Коллекция бесплатных HTML5 игр с открытым исходным кодом</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <a href="#featured">Главная</a>
+                    <a href="#categories">Категории</a>
+                    <a href="#all-games">Все игры</a>
+                </div>
+                <div class="footer-section">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/ваш-username" target="_blank">
+                        <i class="fab fa-github"></i> Репозиторий проекта
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HTML Games Collection. Все права на игры принадлежат их авторам.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/games-loader.js"></script>
+</body>
+</html>
