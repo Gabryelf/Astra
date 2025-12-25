@@ -7,7 +7,7 @@ const gamesData = [
         description: 'Захватывающий космический шутер с волнами врагов и боссами',
         fullDescription: 'Защищайте галактику от вторжения инопланетян! Управляйте космическим кораблём, уничтожайте вражеские волны, собирайте улучшения и сражайтесь с эпическими боссами. Игра с прогрессивной сложностью и системой апгрейдов.',
         image: 'docs/screenshots/space-shooter.jpg',
-        path: 'games/action/space-shooter/index.html',
+        path: 'games/action/space_shooter/index.html',
         author: 'GameDeva',
         authorBio: 'Студия разработки космических игр с 2020 года',
         rating: 4.8,
